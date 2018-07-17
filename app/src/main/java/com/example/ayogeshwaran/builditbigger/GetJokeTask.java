@@ -16,7 +16,7 @@ public class GetJokeTask extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... voids) {
         MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
-                .setRootUrl("http://192.168.0.104:8080/_ah/api/")
+                .setRootUrl("http://192.168.0.102:8080/_ah/api/")
                 .setApplicationName("backend")
                 .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                     @Override
