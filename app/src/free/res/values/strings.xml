@@ -2,8 +2,7 @@
     <string name="app_name">Free BuilditBigger</string>
     <string name="instructions">Tap here for a free joke</string>
     <string name="button_text">Show Joke</string>
-    <string name="action_settings">Settings</string>
     <!--Refer here https://developers.google.com/admob/android/test-ads to get test Ad IDs for all ad types-->
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
 </resources>
