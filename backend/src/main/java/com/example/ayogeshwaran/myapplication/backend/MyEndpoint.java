@@ -27,32 +27,11 @@ import Host.JokeHost;
         )
 )
 public class MyEndpoint {
-
-    /**
-     * A simple endpoint method that takes a name and says Hi back
-     */
-    @ApiMethod(name = "sayHi")
-    public MyBean sayHi(@Named("name") String name) {
-        MyBean response = new MyBean();
-        response.setData("Hi, " + name);
-
-        return response;
-    }
-
     @ApiMethod(name = "getJoke")
     public MyBean getJoke() {
-
-        //Simulate processing. 5 seconds
-        try {
-            Thread.sleep(5 * 1000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         MyBean response = new MyBean();
         response.setData(new JokeHost().getRandomJoke());
 
         return response;
     }
-
 }

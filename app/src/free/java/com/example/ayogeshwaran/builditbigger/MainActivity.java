@@ -19,14 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mAdView = findViewById(R.id.adView);
-    }
-
-    public void showJoke(View view) {
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
         mAdView.loadAd(adRequest);
+    }
 
+    public void showJoke(View view) {
         new GetJokeTask() {
             @Override
             protected void onPostExecute(String joke) {
